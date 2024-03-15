@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2</id>
+				<title>Перевірка поля &quot;Ім&apos;я&quot; при введені коректних даних</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Відкрити сайт https://zezman.ua/
+2. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;</preconds>
+										<steps>1. Клікнути на поле &quot;Ім&apos;я&quot;
+2. Ввести в поле коректні дані (наприклад, &quot;Дмитро&quot;)
+3. Клікнути в будь яку порожню точку цього блоку</steps>
+										<expected>Система приймає введені дані. Помилок не відображається.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Перевірка поля &quot;Ім&apos;я&quot; при введені некоректних даних</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1.Відкрити сайт https://zezman.ua/
+2.В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;
+</preconds>
+										<steps>1.Клікнути на поле &quot;Ім&apos;я&quot;
+2.Ввести в поле некоректні дані (наприклад, &quot;1111()&quot;)
+3.Клікнути в будь яку порожню точку цього блоку</steps>
+										<expected>Система відображає повідомлення про помилку, що ім’я повинно містити лише літери.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Перевірка поля &quot;Ім&apos;я&quot; при введені довгого імені</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Відкрити сайт https://zezman.ua/
+2. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;
+</preconds>
+										<steps>1. Клікнути на поле &quot;Ім&apos;я&quot;
+2. Ввести в поле некоректні дані (наприклад, &quot;кккккккккккккккккккккккккккккккккккккккк&quot;)
+3. Клікнути в будь яку порожню точку цього блоку</steps>
+										<expected>Система приймає введені дані. Помилок не відображається.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>Перевірка поля &quot;Ім&apos;я&quot; при залишенні цього поля порожнім</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Відкрити сайт https://zezman.ua/
+1. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;</preconds>
+										<steps>1. Клікнути на поле &quot;Ім&apos;я&quot;
+2. Залишити поле порожнім
+3. Клікнути в будь яку порожню точку цього блоку
+</steps>
+										<expected>Сисема просить внести дані та відображає помилку &quot;Заповнити поле&quot;.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>Перевірка поля &quot;E-mail&quot; при введені коректних даних</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Відкрити сайт https://zezman.ua/
+2. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;</preconds>
+										<steps>1. Клікнути на поле &quot;E-mail&quot;
+2. Ввести в поле коректні дані (наприклад, &quot;example@gmail.com&quot;)
+3. Клікнути в будь яку порожню точку цього блоку</steps>
+										<expected>Система приймає введені дані. Помилок не відображається.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>Перевірка поля &quot;E-mail&quot; при введені не коректних даних</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Відкрити сайт https://zezman.ua/
+2. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;</preconds>
+										<steps>1. Клікнути на поле &quot;E-mail&quot;
+2. Ввести в поле коректні дані (наприклад, &quot;example.gmail.com&quot;)
+3. Клікнути в будь яку порожню точку цього блоку</steps>
+										<expected>Система відображає помилку &quot;Некоректно заповнено поле&quot; та не приймає дані.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>Перевірка поля &quot;Телефон&quot; на введеня коректних даних</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Відкрити сайт https://zezman.ua/
+2. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;</preconds>
+										<steps>1. Клікнути на поле &quot;Телефон&quot;
+2. В акардеоні вибору коду країни обрати &quot;Францію +33&quot;
+3. Ввести в поле коректні дані (наприклад, &quot;6 99 88 77 11&quot;)
+4. Клікнути в будь яку порожню точку цього блоку</steps>
+										<expected>Система приймає введені дані. Помилка не відображається.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Перевірка поля &quot;Телефон&quot; при введені літер</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Відкрити сайт https://zezman.ua/
+2. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;</preconds>
+										<steps>1. Клікнути на поле &quot;Телефон&quot;
+2. В акардеоні вибору коду країни обрати &quot;Францію +33&quot;
+3. Ввести в поле коректні дані (наприклад, &quot;привіт&quot;)
+4. Клікнути в будь яку порожню точку цього блоку</steps>
+										<expected>Система блокує можливість вводити в поле &quot;Телефон&quot; літери.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Перевірка поля &quot;Телефон&quot; на введеня не коректних даних</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Відкрити сайт https://zezman.ua/
+2. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;
+</preconds>
+										<steps>1. Клікнути на поле &quot;Телефон&quot;
+2. В акардеоні вибору коду країни обрати &quot;Францію +33&quot;
+3. Ввести в поле коректні дані (наприклад, &quot;0 99 88 77 11&quot;)
+4. Клікнути в будь яку порожню точку цього блоку</steps>
+										<expected>Система дозволяє ввести ці дані, але відображає помилку &quot;Некоректний номер телефону&quot; так як оператора зв&apos;язку з таким номером у Франції не існує.
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Перевірка поля &quot;Телефон&quot; на введеня недостатньої кількості цифр номеру телефону</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Відкрити сайт https://zezman.ua/
+2. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;</preconds>
+										<steps>1. Клікнути на поле &quot;Телефон&quot;
+2. В акардеоні вибору коду країни обрати &quot;Францію +33&quot;
+3. Ввести в поле коректні дані (наприклад, &quot;6 99 88 77 1&quot;)
+4. Клікнути в будь яку порожню точку цього блоку</steps>
+										<expected>Система тема не приймає дані і відображає помилку &quot;Номер занадто короткий&quot;.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>Перевірка поля &quot;Коментар&quot; на одночасне введення літер латиниці та кирилиці</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Відкрити сайт https://zezman.ua/
+2. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;
+</preconds>
+										<steps>1. Клікнути на поле &quot;Коментар&quot;
+2. Ввести в поле дані (наприклад, &quot;Ріка, Река, River&quot;)
+3. Клікнути в будь яку порожню точку цього блоку</steps>
+										<expected>Система приймає введені дані, конфліктів і помилок не виникає. </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Перевірка поля &quot;Коментар&quot; на введеня символів арабського алфавіту</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. В перекладачі гугл, перекласти слово &quot;Привіт&quot; з української на арабську, переклад скопіювати
+2. Відкрити сайт https://zezman.ua/
+3. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;</preconds>
+										<steps>1. Клікнути на поле &quot;Коментар&quot;
+2. Ввести в поле дані отримані з перекладача гугл арабською мовою (наприклад, &quot;مرحبًا&quot;)
+3. Клікнути в будь яку порожню точку цього блоку</steps>
+										<expected>Система приймає літери арабської мови. помилок не відображає.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>Перевірка поля &quot;Коментар&quot; при залишені цього поля порожнім</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Відкрити сайт https://zezman.ua/
+2. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;</preconds>
+										<steps>1. Клікнути на поле &quot;Коментар&quot;
+2. Не вводити жодниж даних
+3. Клікнути в будь яку порожню точку цього блоку</steps>
+										<expected>Система дозволяє залишити це поле порожнім. Помилок не відображається.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>Перевірка на збереження введених даних в поля блоку &quot;Зв&apos;язатися з нами&quot; при оновлені сторінки</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Відкрити сайт https://zezman.ua/
+2. В футері сайту знайти блок &quot;Зв&apos;язатися з нами&quot;</preconds>
+										<steps>1. Заповнити поле &quot;Ім&apos;я&quot; (наприклад &quot;Дмитро&quot;)
+2. Заповнити поле &quot;E-mail&quot; (наприклад &quot;example@gmail.com&quot;)
+3. Заповнити поле &quot;Телефон&quot; залишивши код України і вівши номер телефону (наприклад &quot;669999999&quot;)
+4. Заповнити поле &quot;Коментар&quot; (наприклад &quot;Привіт!&quot;)
+5. Натисніть &quot;F5&quot; для оновлення сторінки</steps>
+										<expected>Після оновлення сторінки введені дані зникають.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
